@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Scroll-margin</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .section {
+            height: 100vh;
+            border-bottom: 2px solid #ddd;
+            padding: 20px;
+        }
+        .target {
+            background-color: #ffeb3b;
+            padding: 20px;
+            scroll-margin-top: 50px; /* Adjusts the margin when scrolling to this element */
+        }
+        .scrollable-container {
+            height: 150px;
+            overflow-y: scroll;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="scrollable-container">
+        <div class="section">Section 1</div>
+        <div class="section">Section 2</div>
+        <div class="section target">Target Section with Scroll Margin</div>
+        <div class="section">Section 4</div>
+    </div>
+    <button onclick="document.querySelector('.target').scrollIntoView({ behavior: 'smooth' });">Scroll to Target</button>
+</body>
+</html>
