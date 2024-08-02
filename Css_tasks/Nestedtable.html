@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nested Tables Example</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        .nested-table {
+            width: 100%;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <h2>Company Departments</h2>
+    <table>
+        <tr>
+            <th>Department</th>
+            <th>Manager</th>
+            <th>Team</th>
+        </tr>
+        <tr>
+            <td>Engineering</td>
+            <td>Upendar</td>
+            <td>
+                <table class="nested-table">
+                    <tr>
+                        <th>Name</th>
+                        <th>Role</th>
+                    </tr>
+                    <tr>
+                        <td>Shiva</td>
+                        <td>Software Engineer</td>
+                    </tr>
+                    <tr>
+                        <td>sandeep</td>
+                        <td>DevOps Engineer</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>Marketing</td>
+            <td>Jai</td>
+            <td>
+                <table class="nested-table">
+                    <tr>
+                        <th>Name</th>
+                        <th>Role</th>
+                        <th>Location</th>
+                    </tr>
+                    <tr>
+                        <td>Praveen</td>
+                        <td>SEO Specialist</td>
+                        <td>Hyd</td>
+                    </tr>
+                    <tr>
+                        <td>Sai</td>
+                        <td>Content Strategist</td>
+                        <td>Hyd</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>Human Resources</td>
+            <td>Srikanth</td>
+            <td>
+                <table class="nested-table">
+                    <tr>
+                        <th>Name</th>
+                        <th>Role</th>
+                    </tr>
+                    <tr>
+                        <td>Vijay</td>
+                        <td>HR Specialist</td>
+                    </tr>
+                    <tr>
+                        <td>pradeep</td>
+                        <td>Recruiter</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
